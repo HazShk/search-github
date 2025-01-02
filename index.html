@@ -13,12 +13,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Git it Done</title>
+    <title>GiHub Search</title>
   </head>
 
   <body class="flex-column min-100-vh">
     <header class="hero">
-      <h1 class="app-title"><i class="fab fa-github"></i> Git it Done!</h1>
+      <h1 class="app-title"><i class="fab fa-github"></i> GiHub Search!</h1>
       <p>
         Search for a GitHub user or click on a language to see a list of
         repositories and how many open issues they have!
@@ -43,7 +43,12 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-8"></div>
+      <div class="col-12 col-md-8">
+        <h2 class="subtitle">
+          Showing Repositories for: <span id="repo-search-term"></span>
+        </h2>
+        <div id="repos-container" class="list-group"></div>
+      </div>
     </main>
 
     <script src="./assets/js/homepage.js"></script>
